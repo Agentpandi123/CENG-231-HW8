@@ -1,0 +1,128 @@
+Script started on 2023-05-15 00:29:18-07:00
+]0;edilin@WWWSTU-P01:~/ceng231/hw8[edilin@WWWSTU-P01 hw8]$ ./PhotoLab_client -ip 192.168.16.72 -p 2001 -autotest300[C[C[C[C[C[C[C[C[C[C001[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgcc PhotoLab_client.c -Wall -ansi -o PhotoLab_client
+]0;edilin@WWWSTU-P01:~/ceng231/hw8[edilin@WWWSTU-P01 hw8]$ gcc PhotoLab_client.c -Wall -ansi -o PhotoLab_client
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./PhotoLab_client -ip 192.168.16.72 -p 2001 -autotest
+./PhotoLab_client: Creating a socket...
+./PhotoLab_client: Using port 2001...
+./PhotoLab_client: Preparing the server address...
+./PhotoLab_client: Connecting to the server...
+./PhotoLab_client: Sending request AUTOTEST
+./PhotoLab_client: Waiting for response...
+./PhotoLab_client: Recieved response: 
+./PhotoLab_client: Sending request CLOSE
+./PhotoLab_client: Waiting for response...
+./PhotoLab_client: Recieved response: 
+./PhotoLab_client: Closing...
+]0;edilin@WWWSTU-P01:~/ceng231/hw8[edilin@WWWSTU-P01 hw8]$ ./PhotoLab_client -ip 192.168.16.72 -p 2001 -autotest
+./PhotoLab_client: Creating a socket...
+./PhotoLab_client: Using port 2001...
+./PhotoLab_client: Preparing the server address...
+./PhotoLab_client: Connecting to the server...
+./PhotoLab_client: Sending request AUTOTEST
+./PhotoLab_client: Waiting for response...
+^C
+]0;edilin@WWWSTU-P01:~/ceng231/hw8[edilin@WWWSTU-P01 hw8]$ exit
+exit
+
+Script done on 2023-05-15 00:32:57-07:00
+WWSTU-P01:~/ceng231/hw8[edilin@WWWSTU-P01 hw8]$ gcc -c -Wall -ansi PhotoLab_server.c -o PhotoLab_server.o[20PImage.c -o Image.o
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./PhotoLab_client -ip 192.168.16.72 -p 2001 -autotest300[C[C[C[C[C[C[C[C[C[C001[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgcc PhotoLab_client.c -Wall -ansi -o PhotoLab_client
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd hw8[Kceng231./PhotoLab_server -p 2001gcc Image.o PhotoLab_server.o -o PhotoLab_server
+]0;edilin@WWWSTU-P01:~/ceng231/hw8[edilin@WWWSTU-P01 hw8]$ gcc Image.o PhotoLab_server.o -o PhotoLab_server
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-c -Wall -ansi PhotoLab_server.c -o PhotoLab_server.o[20PImage.c -o Image.o
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./PhotoLab_client -ip 192.168.16.72 -p 2001 -autotest300[C[C[C[C[C[C[C[C[C[C001[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgcc PhotoLab_client.c -Wall -ansi -o PhotoLab_client
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd hw8[Kceng231./PhotoLab_server -p 2001gcc Image.o PhotoLab_server.o -o PhotoLab_server
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23P./PhotoLab_server -p 2001
+./PhotoLab_server: preparing the server address...
+./PhotoLab_server: assigning the server name to the socket...
+./PhotoLab_server: listening on port 2001...
+./PhotoLab_server: Connection to client established
+./PhotoLab_server: Recieved message: AUTOTEST
+^C
+]0;edilin@WWWSTU-P01:~/ceng231/hw8[edilin@WWWSTU-P01 hw8]$ ./PhotoLab_server -p 2001
+./PhotoLab_server: preparing the server address...
+./PhotoLab_server: assigning the server name to the socket...
+./PhotoLab_server: listening on port 2001...
+./PhotoLab_server: Connection to client established
+./PhotoLab_server: Recieved message: AUTOTEST
+./PhotoLab_server: Recieved message: 
+wilson.ppm was read successfully!
+aging.ppm was saved successfully. 
+aging.jpg was stored for viewing. 
+Aging tested!
+
+wilson.ppm was read successfully!
+bw.ppm was saved successfully. 
+bw.jpg was stored for viewing. 
+Black and White tested!
+
+wilson.ppm was read successfully!
+negative.ppm was saved successfully. 
+negative.jpg was stored for viewing. 
+Negative tested!
+
+wilson.ppm was read successfully!
+vflip.ppm was saved successfully. 
+vflip.jpg was stored for viewing. 
+VFlip tested!
+
+wilson.ppm was read successfully!
+hmirror.ppm was saved successfully. 
+hmirror.jpg was stored for viewing. 
+HMirror tested!
+
+wilson.ppm was read successfully!
+sharpen.ppm was saved successfully. 
+sharpen.jpg was stored for viewing. 
+Sharpen tested!
+
+wilson.ppm was read successfully!
+xRB.ppm was saved successfully. 
+xRB.jpg was stored for viewing. 
+ExRB tested!
+
+./PhotoLab_server: Sending response: OK
+./PhotoLab_server: Recieved message: 
+wilson.ppm was read successfully!
+aging.ppm was saved successfully. 
+aging.jpg was stored for viewing. 
+Aging tested!
+
+wilson.ppm was read successfully!
+bw.ppm was saved successfully. 
+bw.jpg was stored for viewing. 
+Black and White tested!
+
+wilson.ppm was read successfully!
+negative.ppm was saved successfully. 
+negative.jpg was stored for viewing. 
+Negative tested!
+
+wilson.ppm was read successfully!
+vflip.ppm was saved successfully. 
+vflip.jpg was stored for viewing. 
+VFlip tested!
+
+wilson.ppm was read successfully!
+hmirror.ppm was saved successfully. 
+hmirror.jpg was stored for viewing. 
+HMirror tested!
+
+wilson.ppm was read successfully!
+sharpen.ppm was saved successfully. 
+sharpen.jpg was stored for viewing. 
+Sharpen tested!
+
+wilson.ppm was read successfully!
+xRB.ppm was saved successfully. 
+xRB.jpg was stored for viewing. 
+ExRB tested!
+
+./PhotoLab_server: Sending response: OK
+]0;edilin@WWWSTU-P01:~/ceng231/hw8[edilin@WWWSTU-P01 hw8]$ ez[Kxit
+exit
+
+Script done on 2023-05-15 00:32:20-07:00
